@@ -12,6 +12,10 @@
       src="https://kit.fontawesome.com/cb33413731.js"
       crossorigin="anonymous"
     ></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
     <title>Health</title>
 
     <!-- CSS BOOTSTRAP -->
@@ -217,21 +221,11 @@
                 aria-labelledby="headingThree"
                 data-parent="#accordionExample"
               >
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson cred nesciunt sapiente ea proident.
-                  Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                  beer farm-to-table, raw denim aesthetic synth nesciunt you
-                  probably haven't heard of them accusamus labore sustainable
-                  VHS.
-                </div>
+                <div class="card-body" style="height: 300px;width: 100%;"></div>
               </div>
             </div>
+
+            <div class="ct-chart mt-5" style="height: 300px;width: 100%;"><center>Frequência cardíaca X Idade</center></div>
           </div>
         </div>
       </div>
@@ -254,7 +248,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- END JS BOOTSTRAP -->
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -286,5 +280,12 @@
       </div>
     </div>
     <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        new Chartist.Line('.ct-chart', {labels: ['20', '23', '24', '26', '29'], series: [ [130, 100, 93, 90, 88],]}, { fullWidth: true, chartPadding: {right: 50},});
+        })
+    </script>
   </body>
 </html>
