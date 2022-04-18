@@ -12,7 +12,7 @@
       src="https://kit.fontawesome.com/cb33413731.js"
       crossorigin="anonymous"
     ></script>
-    <title>Health - Resultados</title>
+    <title>Health - Resultado</title>
 
     <!-- CSS BOOTSTRAP -->
     <link
@@ -45,7 +45,7 @@
       <div class="card">
         <h5 class="card-header">Olá, Sr(a), José!</h5>
         <div class="card-body">
-          <h5 class="card-title">Tela de acompanhamento do protocolo</h5>
+          <h5 class="card-title">Resultado do protocolo</h5>
 
           <!--  -->
           <!--  -->
@@ -91,6 +91,7 @@
                     data-target="#collapseTwo"
                     aria-expanded="false"
                     aria-controls="collapseTwo"
+                    style="color: red;"
                   >
                     Ergonométrico/Ecodoppler Cardiograma
                     <i class="fa-solid fa-circle-xmark"></i>
@@ -311,14 +312,21 @@
 
           <!-- <a href="#" class="btn btn-primary mt-3">Ver resultados</a> -->
           <!-- <a href="#" class="btn btn-secondary mt-3">Voltar</a> -->
-          <button
-            type="button"
-            class="btn btn-primary mt-3"
-            data-toggle="modal"
-            data-target="#modalExemplo"
+          <div class="form-group mt-3">
+            <label for="exampleFormControlTextarea1">Recomendação</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              disabled
+            >Repetir o teste Ergonométrico/Ecodoppler Cardiograma em: 18/07/2022
+          </textarea>
+          </div>
+
+          <a href="../index.html" class="btn btn-success mt-3"
+            >Concluir</a
           >
-            Recomendação
-          </button>
+          <a href="./acompanhamento.html" class="btn btn-secondary mt-3">Voltar</a>
         </div>
 
         <!-- <div class="card-footer">2 dias atrás</div> -->
@@ -343,56 +351,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- END JS BOOTSTRAP -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="modalExemplo"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Recomendação Final
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Fechar"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Olá, Sr(a) José, está na hora de fazer seu check-up esportivo anual.
-            Para agendar clique aqui.
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Fechar
-            </button>
-            <button
-              type="reset"
-              class="btn btn-primary"
-              data-dismiss="modal"
-              aria-label="Fechar"
-              onclick="confirmarAlert()"
-            >
-              Agendar
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="../index.js"></script>
   </body>
