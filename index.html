@@ -8,6 +8,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script
+      src="https://kit.fontawesome.com/cb33413731.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Health</title>
 
     <!-- CSS BOOTSTRAP -->
@@ -48,7 +52,7 @@
       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="btn btn-primary" href="#">Notificações <span class="badge badge-light">4</span></a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">Notificações <i class="fa-solid fa-bell"></i></button>
           </li>
         </ul>
       </div>
@@ -250,5 +254,37 @@
       crossorigin="anonymous"
     ></script>
     <!-- END JS BOOTSTRAP -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notificação</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h5>Olá, Sr José, não se esqueça.</h5>
+            <p>Está na hora de fazer seu check-up esportivo anual. Para agendar <a href="#">clique aqui</a></p>
+            <hr>
+            <h5>Olá, Sr José, passando para lembrar</h5>
+            <p>Um novo exame de glicemia foi agendado para você. Para alterar a data do agendamento <a href="#">clique aqui</a></p>
+            <hr>
+            <h5>Anote na agenda, Sr José</h5>
+            <p>Repetir o teste Ergonométrico/Ecodoppler Cardiograma em: 18/07/2022</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
   </body>
 </html>
