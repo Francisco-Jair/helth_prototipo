@@ -65,7 +65,7 @@
     <div class="container mt-5">
       <!-- Imagem e texto -->
       <div class="card">
-        <h5 class="card-header">Olá, Vamos avaliar a sua saúde hoje?</h5>
+        <h5 class="card-header">Olá, Sr. XXX, vamos avaliar a sua saúde hoje ?</h5>
         <div class="card-body">
           <!-- <h5 class="card-title">O que deseja fazer hoje ?</h5> -->
 
@@ -200,6 +200,7 @@
               </div>
             </div>
 
+            
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
@@ -221,11 +222,15 @@
                 aria-labelledby="headingThree"
                 data-parent="#accordionExample"
               >
-                <div class="card-body" style="height: 300px;width: 100%;"></div>
+                <div class="card-body">
+                  <img src="./img/imagem.jpeg" alt="">
+                </div>
+                <!-- <div class="ct-chart mt-5" style="height: 300px;width: 100%;"><center>Frequência cardíaca X Idade</center></div> -->
+              
               </div>
             </div>
 
-            <div class="ct-chart mt-5" style="height: 300px;width: 100%;"><center>Frequência cardíaca X Idade</center></div>
+            <!-- <div class="ct-chart mt-5" style="height: 300px;width: 100%;"><center>Frequência cardíaca X Idade</center></div> -->
           </div>
         </div>
       </div>
@@ -282,10 +287,13 @@
     <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-    <script>
+    <!-- <script>
+
+
       $(document).ready(function(){
+        
         new Chartist.Line('.ct-chart', {labels: ['20', '23', '24', '26', '29'], series: [ [130, 100, 93, 90, 88],]}, { fullWidth: true, chartPadding: {right: 50},});
         })
-    </script>
+    </script> -->
   </body>
 </html>
